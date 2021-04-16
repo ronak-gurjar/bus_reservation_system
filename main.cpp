@@ -124,10 +124,8 @@ top:
                 break;
             }
             // if seat is not avalilable
-            else
-            
-                cout<<"this seat number is already reserved:"<<endl;
-            
+            else     
+                cout<<"this seat number is already reserved:"<<endl;        
         }
     }
 
@@ -229,8 +227,7 @@ int depo::seat_info()
        
     }
 
-    if(i>bus_count)
-    
+    if(i>bus_count)   
         cout<<"enter correct bus number:"<<endl;
 
 }
@@ -249,19 +246,15 @@ int depo:: seat_position(int count)
             num_count++;
 
             if(strcmp(bus[count].seat_number[c][d],"empty")==0)
-            {
-                               
+            {                               
                 cout<<num_count<<".";
                 cout<<bus[count].seat_number[c][d];
-
                 bus_count++;
-  
             }
 
             else
             {
-                cout<<num_count<<".";
-               
+                cout<<num_count<<".";            
                 cout<<bus[count].seat_number[c][d];
             }
         }
